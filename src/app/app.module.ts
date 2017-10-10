@@ -42,7 +42,43 @@ import { AppComponent }         from './app.component';
 import { AppRoutingModule }     from './app-routing.module';
 import {LandingPageComponent} from '../landing-page/landing-page.component';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule } from '@angular/material';
+import {  CriacaoTutorComponent} from "../criacao-tutor/criacao-tutor.component";
+import { MenuComponent } from "../menu/menu.component";
+import {
+  MdAutocompleteModule,
+  MdButtonModule,
+  MdButtonToggleModule,
+  MdCardModule,
+  MdCheckboxModule,
+  MdChipsModule,
+  MdDatepickerModule,
+  MdDialogModule,
+  MdExpansionModule,
+  MdGridListModule,
+  MdIconModule,
+  MdInputModule,
+  MdListModule,
+  MdMenuModule,
+  MdNativeDateModule,
+  MdPaginatorModule,
+  MdProgressBarModule,
+  MdProgressSpinnerModule,
+  MdRadioModule,
+  MdRippleModule,
+  MdSelectModule,
+  MdSidenavModule,
+  MdSliderModule,
+  MdSlideToggleModule,
+  MdSnackBarModule,
+  MdSortModule,
+  MdTableModule,
+  MdTabsModule,
+  MdToolbarModule,
+  MdTooltipModule,
+  MdStepperModule,
+} from '@angular/material';
+
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -55,12 +91,14 @@ import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModu
     MdCardModule,
     MdToolbarModule,
     MdIconModule,
-
+  
 
   ],
   declarations: [
     AppComponent,
     LandingPageComponent,
+    CriacaoTutorComponent,
+    MenuComponent,
   ],
   providers: [ ],
   bootstrap: [ AppComponent ]
