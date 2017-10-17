@@ -36,7 +36,7 @@ export class AppModule { }
 
 import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
-import { FormsModule }    from '@angular/forms';
+import { FormsModule, ReactiveFormsModule, FormGroup, FormControl}    from '@angular/forms';
 import {HttpModule} from "@angular/http";
 import { AppComponent }         from './app.component';
 import { AppRoutingModule }     from './app-routing.module';
@@ -44,6 +44,7 @@ import {LandingPageComponent} from '../landing-page/landing-page.component';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import {  CriacaoTutorComponent} from "../criacao-tutor/criacao-tutor.component";
 import { MenuComponent } from "../menu/menu.component";
+import { LoginDialogComponent } from "../landing-page/login-dialog/login.component";
 import {
   MdAutocompleteModule,
   MdButtonModule,
@@ -91,7 +92,7 @@ import {
     MdCardModule,
     MdToolbarModule,
     MdIconModule,
-  
+    MdDialogModule
 
   ],
   declarations: [
@@ -99,7 +100,9 @@ import {
     LandingPageComponent,
     CriacaoTutorComponent,
     MenuComponent,
+    LoginDialogComponent,
   ],
+  entryComponents: [LoginDialogComponent],
   providers: [ ],
   bootstrap: [ AppComponent ]
 })
